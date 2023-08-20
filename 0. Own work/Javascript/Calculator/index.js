@@ -32,37 +32,39 @@ function handleClick() {
 
 function handleNumber(number) {
     alert(number);
-    if(operator === null) {
-        number1Inputs.push(number);
-        alert(number);
-    } else {
-        number2Inputs.push(number);
-        alert(number);
-    }
+    //if(operator === null) {
+    //    number1Inputs.push(number);
+    //    alert(number);
+    //} else {
+    //    number2Inputs.push(number);
+    //    alert(number);
+    //}
 }
 
 function handleOperator(input) {
-    if(input === "x") {
-        input = "multiply";
-    }else if (input === "/") {
-        input = "divide";
-    } else if(input === "+") {
-        input = "add";
-    } else if(input === "-") {
-        input = "subtract";
-    }
+    alert(input);
+    //if(input === "x") {
+    //    input = "multiply";
+    //}else if (input === "/") {
+    //    input = "divide";
+    //} else if(input === "+") {
+    //    input = "add";
+    //} else if(input === "-") {
+    //    input = "subtract";
+    //}
 }
 
 function handleEquals() {
     alert("equals");
-    let number1 = number1Inputs.join();
-    let number2 = number2Inputs.join();
-    alert(operation(operator, number1, number2));
+    //let number1 = number1Inputs.join();
+    //let number2 = number2Inputs.join();
+    //alert(operation(operator, number1, number2));
 }
 
+const button = document.querySelectorAll("button");
 // Assigning Event Listeners
 for(var i = 0; i < 16; i++) {
-    let button = querySelectorAll("button");
+    button[i].addEventListener("click", alert("hi"));
     if(button[i].classList.contains("number-key")) {
         button[i].addEventListener("click", handleNumber(button[i].innerHTML));
     } else if(button[i].classList.contains("operator")) {
