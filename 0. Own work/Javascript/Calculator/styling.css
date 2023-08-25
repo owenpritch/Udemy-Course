@@ -1,11 +1,21 @@
+.title {
+    margin-left: 600px;
+}
+
+.display {
+    display: inline;
+    margin-top: 300px;
+    margin-left: 600px;
+}
+
 .buttons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    margin-top: 300px;
     margin-left: 600px;
     margin-right: 600px;
 }
+
 
 #key1 {
     grid-area: 1/1/2/2;
@@ -67,6 +77,6 @@
     grid-area: 4/2/5/3;
 }
 
-#eqUALS {
+#equals {
     grid-area: 4/3/5/4;
 }
